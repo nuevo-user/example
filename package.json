@@ -4,7 +4,10 @@
   "description": "my web de informacion",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "harp server --port $PORT"
+  },
+  "dependencies": {
+    "harp": "*"
   },
   "author": "mon666",
   "license": "ISC"
