@@ -1,8 +1,12 @@
-const mytitle = document.querySelector('div')
+const mytitle = document.querySelector('h3');
 
+mytitle.addEventListener('mouseover', mouseOver)
+mytitle.addEventListener('mouseout', mouseOut)
 
-mytitle.style.color = 'white';
-mytitle.style.backgroundColor = 'black';
-mytitle.style.padding = '10px';
-mytitle.style.width = '250px';
-mytitle.style.textAlign = 'center';
+function mouseOver() {
+    mytitle.style.color = "red";
+}
+function mouseOut() {
+    mytitle.style.color = "black";
+}
+
